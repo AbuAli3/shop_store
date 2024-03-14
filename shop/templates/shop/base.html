@@ -1,0 +1,24 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> {% block title %} my shop {% endblock %}</title>
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
+
+    </head>
+<body>
+<div id = "header">
+    <a href="/" class = "logo"> My shop</a>
+</div>
+<div id="subheader">
+    <div class="cart">
+        Your cart is embty
+    </div>
+</div>
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>
